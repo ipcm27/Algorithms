@@ -12,8 +12,12 @@ public class SelectionSort {
         sort(mylist);
 
     }
+    // troca troca sort
+    // Pega o menor item possivel da pilha
+    // seta no lugar do i e bota o do i pro index que o menor tava.
 
     public static List<Integer> sort(List<Integer> unsorted) {
+        // Pega o menor item possivel da pilha
         for (int i =0; i < unsorted.size(); i++){
             int min = 10000000;
             int minIdx = 0;
@@ -25,11 +29,11 @@ public class SelectionSort {
 
                 }
             }
+            // seta no lugar do i e bota o do i pro index que o menor tava.
             int replaced = unsorted.get(i);
             unsorted.set(i,min);
             unsorted.set(minIdx,replaced);
             System.out.println(unsorted);
-
         }
         System.out.println(unsorted);
         return unsorted;

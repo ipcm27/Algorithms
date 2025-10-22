@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-class insertionSort {
+class InsertionSort {
 
     public static List<Integer> sortList(List<Integer> unsortedList) {
         List<Integer> sortedList = new ArrayList<>();
@@ -17,7 +17,7 @@ class insertionSort {
 
         // Enquanto current for maior que 0 (nao a primeira iteracao)
         // pego o item da lista
-        // Enquanto o atual for menor que o anterior menor que o anterior
+        // Enquanto o atual for menor que o anterior
             // int atual = unsortedList.get(currentIdx);
             // int anterior = unsortedList.get(currentIdx -1);
         while (currentIdx > 0 && unsortedList.get(currentIdx) < unsortedList.get(currentIdx -1)) {
